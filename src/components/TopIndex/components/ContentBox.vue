@@ -17,7 +17,7 @@
           实现,致力于解决日常工具散乱,近期热门电影,收集数据并统计的练习项目⭐
         </p>
         <p class="content-box-introduce-github">
-          <a href="https://github.com/MosuguOvO"
+          <a href="https://github.com/MosuguOvO/MSG-web"
             >Github源码地址
             <i class="iconfont icon-jiantou_xiangyou" />
             <div class="githubMove"></div>
