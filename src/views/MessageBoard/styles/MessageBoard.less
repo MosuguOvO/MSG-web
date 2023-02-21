@@ -1,0 +1,115 @@
+@media screen and (min-width:@mobile-device) {
+   .message {
+    margin-top: 7rem;
+    padding: 2.5rem;
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #771B2F;
+    border-radius: 2.5rem 2.5rem 0 0;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    overflow-y:auto;
+    transition: all 1s ease;
+    border-bottom: 0px;
+    background-color: @bgColor;
+    .line {
+        width: 71.5%;
+        margin: 0 auto;
+        border-top: 15px solid #D3D3D3;
+        border-radius: 0px 0px 20px  20px;
+        transform: scaleY(-1) rotate(180deg);
+        margin-bottom: 40px;
+      }
+    .top-info {
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .title {
+            font-size: 2.5rem;
+        }
+        .desc {
+            font-size: @big-text;
+        }
+    }
+     
+    .edit-part {
+        margin-top: @margin-general;
+        width: 100%;
+        .font-normal();
+        .edit-info {
+            display: flex;
+            flex-direction: column;
+            .nickname {
+                .flexbox(row);
+                padding: @padding-general;
+                margin-right: 0;
+                margin-bottom: @margin-general;
+                span {
+                    display: flex;
+                    flex-shrink: 0;
+                    font-size: 16px;
+                    width: 120px;
+                  }
+                :deep(.el-input-inner) {
+                border-radius: 2.5rem;
+                }
+            }
+        }
+      
+    }
+
+
+   }
+
+}
+
+@media screen and (min-width:@normal-device){
+    .message {
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        .edit-part {
+            .edit-info {
+                flex-direction: row;
+                .nickname {
+                    margin-right: @margin-general;
+                    margin-bottom: 0;
+                    .contact {
+                        min-width: 25rem;
+                    }
+                    span {
+                        width:unset
+                    }
+                }
+                
+            }
+        }
+        .edit-message {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .edit-content{
+                width: 70%;
+                margin-left: @margin-general;
+                position: relative;
+                .edit-button {
+                    position: absolute;
+                    right: 0;
+                    bottom: -1rem;
+                }
+            }
+            
+        }
+        .message-part {
+            display: flex;
+            align-items:baseline;
+           & >* {
+                padding-right: @padding-general;
+            }
+        }
+    }
+
+ 
+}

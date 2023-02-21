@@ -1,0 +1,30 @@
+@media screen and (min-width:@mobile-device) {
+    .el-header {
+        padding: 0;
+        height: @top-nav-bar-height;
+        position: relative;
+        z-index:999;
+        box-shadow:0px 2px 10px @shadowColor;
+        background-color: @themeColor;
+        left: 0;
+        right: 0;
+        .el-row {
+            height: 100%;
+            padding: @padding-general;
+            align-items: center;
+        }
+    }
+}
+
+@media screen  and  (min-width:@normal-device){
+
+    .el-header {
+        position: relative;
+        background-color: @whiteColor;
+         width: 80%;
+         margin: 0 auto;
+         border-radius: 5rem;
+         padding: 0 @padding-general;
+    }
+    
+}
