@@ -1,0 +1,25 @@
+#app {
+  height: 100%;
+}
+@media screen and (min-width: @mobile-device) {
+  .container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+    background-color: @whiteColor;
+    .main {
+      width: 100%;
+      margin: 0 auto;
+      color: @textColor;
+      // min-height: 471px;
+    }
+  }
+}
+
+@media screen and (min-width: @normal-device) {
+  .main {
+    width: 80%;
+  }
+}

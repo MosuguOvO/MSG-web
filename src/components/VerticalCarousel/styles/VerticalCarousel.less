@@ -1,0 +1,55 @@
+@media screen and(min-width:320px) {
+  .carousel-container {
+    margin: 0.5rem 0;
+    background-color: @bgColor;
+  }
+  .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .el-image {
+      width: 100%;
+      height: 100%;
+      filter: brightness(0.8);
+    }
+
+    .desc {
+      position: absolute;
+      top: 45%;
+      left: 2rem;
+      width: 100%;
+      .font-normal();
+      color: black;
+      transform: translateY(-50%);
+      .title {
+        max-width: 90%;
+        font-size: @very-big-text;
+      }
+      .summary {
+        font-size: 400;
+        max-width: 70%;
+      }
+      .tag {
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  :deep(.el-carousel__container) {
+    height: 200px !important;
+  }
+}
+
+@media screen and(min-width:992px) {
+  :deep(.el-carousel__container) {
+    margin-top: 0;
+    height: 340px !important;
+  }
+  .content {
+    .desc {
+      top: 80%;
+    }
+  }
+}

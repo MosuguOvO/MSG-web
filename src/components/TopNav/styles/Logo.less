@@ -1,0 +1,26 @@
+@media screen and (min-width: @mobile-device) {
+  .icon {
+    cursor: pointer;
+    img {
+      display: none;
+      height: auto;
+    }
+    svg {
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: @normal-device) {
+  .icon {
+    display: flex;
+    justify-content: center;
+    img {
+      display: block;
+      margin-top: 1px;
+    }
+    svg {
+      height: 40px;
+    }
+  }
+}

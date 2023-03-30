@@ -1,0 +1,94 @@
+@media screen and (min-width: @mobile-device) {
+  .content-box {
+    padding: 0 @padding-general;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-video {
+      height: 100%;
+      display: none;
+    }
+
+    &-introduce {
+      width: 100%;
+      h2 {
+        display: none;
+        font-size: 3.5rem;
+        font-weight: 545;
+        margin-top: 1rem;
+
+        .iconfont {
+          vertical-align: middle;
+        }
+      }
+
+      p {
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+
+      &-github {
+        margin-top: @margin-general;
+
+        a {
+          position: relative;
+          text-decoration: none;
+          color: #1264a3;
+
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -0.4rem;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: #1264a3;
+            transition: width 0.2s ease-in-out;
+          }
+
+          &:hover::before {
+            width: 100%;
+          }
+
+          i {
+            font-size: 2.5rem;
+            vertical-align: middle;
+          }
+
+          .githubMove {
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+          }
+
+          .githubMove:hover {
+            background-color: pink;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: @normal-device) {
+  .content-box {
+    padding: 0;
+    margin-top: 1.5rem;
+    width: 77%;
+    &-video {
+      display: block;
+    }
+  }
+
+  .content-box-introduce {
+    h2 {
+      display: block;
+    }
+  }
+
+  .box2 {
+  }
+}

@@ -1,0 +1,24 @@
+//flex盒子 @是赋予默认值(变量的语法
+.flexbox(@dir:row,@just:center,@align:center) {
+  display: flex;
+  justify-content: @just;
+  align-items: @align;
+  flex-direction: @dir;
+}
+
+//盒子阴影
+.shadow(@drop:3px,@big:5px,@color:@shadowColor) {
+  box-shadow: @drop @drop @big @color;
+}
+
+.font-normal() {
+  font-family: 'Thinfont', '幼圆';
+  font-weight: 600;
+}
+
+.flex(@dir: row, @jus: flex-start, @align: flex-start) {
+  display: flex;
+  justify-content: @jus;
+  align-items: @align;
+  flex-direction: @dir;
+}

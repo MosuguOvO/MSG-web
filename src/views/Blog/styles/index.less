@@ -1,0 +1,29 @@
+.blog {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 4px solid #771b2f;
+  border-radius: 2.5rem 2.5rem 0 0;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  padding: @padding-general;
+  &-title {
+    padding: 2rem;
+    text-align: center;
+    font-size: @very-big-text;
+  }
+  &-author {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: @margin-general;
+  }
+  &-content {
+    font-weight: 500;
+    padding: @padding-general;
+    text-indent: 3.5em;
+    white-space: pre-wrap;
+    font-size: 2.1rem;
+    line-height: 4rem;
+  }
+}

@@ -1,0 +1,26 @@
+@media screen and (min-width: @mobile-device) {
+  .right {
+    display: none;
+    justify-content: space-between;
+    font-size: @big-text;
+    align-items: center;
+    position: relative;
+    color: @textColor;
+    .font-normal();
+  }
+}
+@media screen and (min-width: @normal-device) {
+  .right {
+    display: flex;
+  }
+  .default {
+    display: flex;
+    flex-direction: row;
+    .login {
+      padding: 0 @padding-general;
+    }
+    .register {
+      padding: 0 @padding-general;
+    }
+  }
+}

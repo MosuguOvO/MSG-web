@@ -1,0 +1,60 @@
+@media screen and (min-width: @mobile-device) {
+  .login {
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    ul {
+      visibility: hidden;
+      margin-top: 36px;
+      i {
+        color: black;
+        font-size: 37px;
+        padding: @padding-general;
+      }
+    }
+    .title {
+      padding-top: @padding-general;
+    }
+    .loginMethod {
+      position: relative;
+      width: 100%;
+      border: 1px solid black;
+      height: 4rem;
+      text-align: center;
+      margin-top: @margin-general;
+      padding: @padding-general;
+      display: relative;
+      h3 {
+        display: block;
+        font-size: @big-text;
+      }
+    }
+    .tips {
+      color: rgba(29, 28, 29, 0.5);
+      background-color: rgba(97, 96, 97, 0.5);
+      width: 100%;
+      font-size: @big-text;
+      margin-top: @margin-general;
+      padding: @padding-general;
+    }
+  }
+}
+@media screen and (min-width: @normal-device) {
+  .login {
+    ul {
+      visibility: visible;
+    }
+    .loginMethod {
+      position: relative;
+      width: 40%;
+    }
+    .tips {
+      width: 40%;
+    }
+  }
+}

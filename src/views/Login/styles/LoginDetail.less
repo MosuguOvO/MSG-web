@@ -1,0 +1,140 @@
+//移动端 （待完成)
+@media screen and (min-width: 320px) {
+  ul {
+    li {
+      margin: @margin-general;
+    }
+    .iconfont {
+      color: @textColor;
+      font-size: @big-text;
+      font-weight: 700;
+    }
+  }
+  .login {
+    // flex布局
+    .flexbox();
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    .temp {
+      position: absolute;
+      left: 15vw;
+      top: 12%;
+    }
+
+    .login-box {
+      display: block;
+      width: 72vw;
+      height: 70vh;
+      min-height: 50rem;
+      border: @border-line solid @textColor;
+      .shadow(5px,0px,@themeColor);
+      border-radius: 15px;
+      .loginform {
+        position: absolute;
+        padding: @padding-general;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        //深度选择器
+        :deep(.el-form-item__content) {
+          position: relative;
+          flex-wrap: nowrap;
+          margin: @margin-general 0;
+        }
+        .label {
+          .font-normal();
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: @textColor;
+          .zh {
+            font-size: @big-text;
+          }
+          .en {
+            font-size: @small-text;
+          }
+          &--big {
+            .font-normal();
+            color: @textColor;
+
+            .zh {
+              font-size: 3rem;
+            }
+            .en {
+              font-size: @small-text;
+            }
+          }
+        }
+
+        .btn {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .login-btn {
+            width: 10rem;
+            height: 4rem;
+            background: url('../imgs/logimg.png') no-repeat;
+            background-size: cover;
+            &:hover {
+              background: url('../imgs/loginimg-hover.png');
+              background-size: cover;
+            }
+          }
+          .register-btn {
+            width: 10rem;
+            height: 4rem;
+            background: url('../imgs/registerimg.png') no-repeat;
+            background-size: cover;
+            &:hover {
+              background: url('../imgs/registerimg-hover.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//PC网页
+@media screen and (min-width: @normal-device) {
+  .login {
+    .temp {
+      width: 45rem;
+      height: 52rem;
+      left: 36%;
+      top: 60%;
+    }
+    .imgbox {
+      width: 87rem;
+      height: 47rem;
+      display: block;
+      background-size: cover;
+    }
+    .login-box {
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      backface-visibility: hidden;
+      display: block;
+      width: 40rem;
+      height: 52rem;
+      transform: translateY(-50%);
+      background-color: @whiteColor;
+      .btn {
+        margin-top: margin-general;
+      }
+    }
+  }
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: all 0.3s;
+  }
+  .slide-enter,
+  .slide-leave-to {
+    //待定
+    transform: translate3d();
+  }
+}

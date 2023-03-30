@@ -1,0 +1,12 @@
+/* @font-face是CSS3中的一个特性，它允许开发者从远程服务器获取字体文件，并将其应用于网站上的文本。它允许你在你的网站上使用任何字体，而不必担心用户的浏//览器是否支持它 */
+
+@font-face {
+  font-family: 'Plus8';
+  src: url('./src/assets/fonts/8bitOperatorPlus8-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 选择所有id为h的元素添加该属性 */
+#h {
+  font-family: 'Plus8';
+}
